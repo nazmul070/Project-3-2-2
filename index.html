@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/631c6bc95b.js" crossorigin="anonymous"></script>
+    <title>Food order page</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>BSMRSTU Sheikh Rasel Hall</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Sign In</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- cards -->
+
+        <div class="foodcard" id="food">
+            <div class="head">
+                <h1>Sheikh Rasel Hall <span>Food List:</span></h1>
+            </div>
+        <div class="card">
+            <div class="crd">
+                <img src="chicken.jpg" alt="">
+                <div class="foodText">
+                    <h2>Chicken Curry</h2>
+                    <br><p>Chicken curry 30/-</p>
+                    <p>Rice 20/-</p>
+                    <button onclick="f11()">Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="fish.jpeg" alt="">
+                <div class="foodText">
+                    <h2>Fish Curry</h2>
+                    <br><p>Fish curry 50/-</p>
+                    <p>Rice 20/-</p>
+                    <button onclick="f22()">Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="alu.jpeg" alt="">
+                <div class="foodText">
+                    <h2>Alu Vaji</h2>
+                    <br><p>Alu vaji 15/-</p>
+                    <p>Rice 20/-</p>
+                    <button onclick="f33()">Order Now</button>
+                </div>
+            </div>
+        </div>
+          
+        <div class="card" id="card2">
+            <div class="crd">
+                <img src="begun.jpeg" alt="">
+                <div class="foodText">
+                    <h2>Begun Vaji</h2>
+                    <br><p>Begun vaji 15/-</p>
+                    <p>Rice 20/-</p>
+                    <button onclick="f44()">Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="aluv.jpeg" alt="">
+                <div class="foodText">
+                    <h2>Alu Vorta</h2>
+                    <br><p>Alu vorta without rice 5/-</p>
+                    <button onclick="f55()">Order Now</button>
+                </div>
+            </div>
+            <div class="crd">
+                <img src="dal.jfif" alt="">
+                <div class="foodText">
+                    <h2>Dal</h2>
+                    <br><p>One cup of dal is free</p>
+                    <button onclick="f66()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="inputs-box">
+            <button onclick="choose()">Submit</button>
+        </div>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <div class="text">
+            <h2>About Us</h2>
+            <p>Food list for the student of </p>
+            <p>Sheikh Rasel Hall</p>
+        </div>
+        <div class="text">
+            <h2>Contact Us</h2>
+            <p>01721-******</p>
+            <p>Sheikh Rasel Hall</p>
+            <p>BSMRSTU</p>
+            <p>GOPALGANJ</p>
+        </div>
+        <div class="text">
+            <h2>Total ordered</h2>
+            <p>Chicken curry </p><p id="o1"></p>
+            <p>Fish curry </p><p id="o2"></p>
+            <p>Alu vaji </p><p id="o3"></p>
+            <p>Begun vaji </p><p id="o4"></p>
+            <p>Alu vorta </p><p id="o5"></p>
+            <p>Dal </p><p id="o6"></p>
+        </div>
+        
+    </div>
+
+    <script>
+        var f1 = 0;
+        var f2 = 0;
+        var f3 = 4;
+        var f4 = 0;
+        var f5 = 0;
+        var f6 = 0;
+        function f11(){
+            ++f1;
+            document.getElementById("o1").innerHTML = f1;
+        }
+        function f22(){
+            ++f2;
+            document.getElementById("o2").innerHTML = f2;
+        }
+        function f33(){
+            ++f3;
+            document.getElementById("o3").innerHTML = f3;
+        }
+        function f44(){
+            ++f4;
+            document.getElementById("o4").innerHTML = f4;
+        }
+        function f55(){
+            ++f5;
+            document.getElementById("o5").innerHTML = f5;
+        }
+        function f66(){
+            ++f6;
+            document.getElementById("o6").innerHTML = f6;
+        }
+
+    </script>
+</body>
+</html>
